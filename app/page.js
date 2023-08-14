@@ -1,8 +1,9 @@
+import BlogCard from "@/components/blogCard"
 
 export default function Home() {
   return (
     <main>
-      <p>Home Page</p>
+     <BlogCard />
     </main>
   )
 }

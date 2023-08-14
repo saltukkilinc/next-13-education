@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px
+}
+
+.imageParent {
+  position: relative;
+  width: 96px;
+  height: 96px;
+}
+
+.card img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cardBody p {
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardBody h3 {
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient: vertical;
+  overflow: hidden
+}
+
