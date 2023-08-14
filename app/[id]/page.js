@@ -1,6 +1,8 @@
-import React from 'react'
-import styles from './styles.module.css'
 import Image from 'next/image';
+import {notFound} from 'next/navigation'
+import React from 'react'
+
+import styles from './styles.module.css'
 
 const fetchIndividualPost = async (id) => {
  const res = await fetch(`https://dummyjson.com/post/${id}`);
@@ -13,6 +15,10 @@ const Post = async ({params}) => {
   // console.log(fetchedData)
 
   const {title, body} = fetchedData
+
+  if(!title) {
+    notFound()
+  }
   
   return (
     <div className={styles.container}>
